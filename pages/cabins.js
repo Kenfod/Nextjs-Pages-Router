@@ -1,5 +1,15 @@
+import Head from "next/head";
+
 function Cabins() {
-  return <div>Cabins page</div>;
+  return (
+    <>
+      <Head>
+        <title>Cabins | Nomad Lounge</title>
+      </Head>
+
+      <div>Cabins page</div>
+    </>
+  );
 }
 
 export default Cabins;

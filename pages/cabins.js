@@ -5,7 +5,7 @@ import Head from "next/head";
 // STATIC SITE GENERATION (SSG) - statically generated
 export async function getStaticProps() {
   const cabins = await getCabins();
-  return { props: { cabins } };
+  return { props: { cabins }, revalidate: 3600 };
 }
 
 function Cabins({ cabins }) {

@@ -7,18 +7,13 @@ export default async function handler(req, res) {
       message: "Please make a POST request!",
     });
 
-  const contactData = {
-    fullName: "Kay",
-    email: "test",
-    subject: "booking",
-    message: "HEY!",
-  };
+  const contactData = JSON.parse(req.body);
 
   const { error } = await supabase.from("contact").insert([contactData]);
 
   //Error message
   if (error)
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: "Could not send your message. Please try again!",
     });

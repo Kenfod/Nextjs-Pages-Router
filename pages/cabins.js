@@ -9,7 +9,7 @@ export async function getStaticProps() {
 }
 
 function Cabins({ cabins }) {
-  console.log(cabins);
+  // console.log(cabins);
 
   return (
     <>

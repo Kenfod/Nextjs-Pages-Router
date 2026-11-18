@@ -50,7 +50,7 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             <div className="space-y-2">
-              <label>Full name</label>
+              <label>Full Name</label>
               <input
                 required
                 className="px-5 py-3 bg-primary-200 text-primary-800 w-full shadow-sm rounded-sm"
@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
 
             <div className="space-y-2">
-              <label>Email address</label>
+              <label>Email Address</label>
               <input
                 type="email"
                 name="email"
